@@ -14,6 +14,10 @@ import Routes from './components/routes';
 
 import authProvider from './auth-provider';
 
+const dataProviderURL =
+  process.env.NODE_ENV == 'production'
+    ? 'https://jsonplaceholder.typicode.com'
+    : 'http://jsonplaceholder.typicode.com';
 const dataProvider = jsonServerProvider('http://jsonplaceholder.typicode.com');
 const App: React.FC = () => (
   <Admin
