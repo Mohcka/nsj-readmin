@@ -50,7 +50,6 @@ module.exports = {
       ? {
           react: 'React',
           'react-dom': 'ReactDOM',
-          'react-admin': ['Admin'],
         }
       : {},
   plugins: [new CleanWebpackPlugin()],

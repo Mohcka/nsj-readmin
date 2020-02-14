@@ -22,14 +22,14 @@ const App: React.FC = () => (
     dataProvider={dataProvider}
     authProvider={authProvider}
   >
-    {/* <Resource
+    <Resource
       name="posts"
       list={PostList}
       edit={PostEdit}
       create={PostCreate}
       icon={PostIcon}
     />
-    <Resource name="users" list={UserList} icon={UserIcon} /> */}
+    <Resource name="users" list={UserList} icon={UserIcon} />
   </Admin>
 );
 
