@@ -20,7 +20,8 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json"
+    "test:e2e": "jest --config ./test/jest-e2e.json",
+    "heroku:deploy": "cross-env NODE_ENV=production webpack && git add . && git commit -m \"heroku deploy\" && git push heroku master"
   },
   "dependencies": {
     "@material-ui/core": "^4.9.2",
