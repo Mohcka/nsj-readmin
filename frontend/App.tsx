@@ -18,7 +18,7 @@ const dataProviderURL =
   process.env.NODE_ENV == 'production'
     ? 'https://jsonplaceholder.typicode.com'
     : 'http://jsonplaceholder.typicode.com';
-const dataProvider = jsonServerProvider('http://jsonplaceholder.typicode.com');
+const dataProvider = jsonServerProvider(dataProviderURL);
 const App: React.FC = () => (
   <Admin
     customRoutes={Routes}
