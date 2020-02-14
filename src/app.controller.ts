@@ -8,7 +8,7 @@ export class AppController {
   @Get()
   @Render('index')
   getHello(): any {
-    console.log(process.env.NODE_ENV == 'production');
+    // console.log(process.env.NODE_ENV == 'production');
     return { title: 'Home', isProd: process.env.NODE_ENV == 'production' };
   }
 }
