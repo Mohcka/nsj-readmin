@@ -69,3 +69,4 @@ export const PostCreate: React.FC = props => (
     </SimpleForm>
   </Create>
 );
+

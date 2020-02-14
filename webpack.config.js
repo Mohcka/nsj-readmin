@@ -22,7 +22,7 @@ module.exports = {
     rules: [
       {
         test: /(\.ts(x?))$/,
-        exclude: /node_modules/,
+        // exclude: /node_modules/,
         loader: 'ts-loader',
         options: {
           configFile: 'tsconfig.webpack.json',
@@ -50,6 +50,7 @@ module.exports = {
       ? {
           react: 'React',
           'react-dom': 'ReactDOM',
+          'react-admin': ['Admin'],
         }
       : {},
   plugins: [new CleanWebpackPlugin()],
